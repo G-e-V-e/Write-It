@@ -11,7 +11,7 @@ In its most basic form, function Write-it accepts a string object and outputs it
 
 The -To streams can be specified in full, abbreviated or as a string of first characters. So, specifying h,ou,log or even 'hol' is the same as Host,Output,Log, resulting in Write-Host, Write-Output and Write to the logfile.
 
-Note that objects passed thru a pipeline come in element by element, so get treated as separate objects, whereas input as an object is treated as a whole.
+Note that objects passed thru a pipeline come in element by element, so get treated as separate objects, whereas objects following the -Object parameter are treated as a whole.
 
 Output written to Host, Log and Verbose streams can be preceded by an AttentionText as the result of an optional AttentionLevel parameter:
   I = Info, W = Warning, C = Caution, E = Error, F = Fatal
