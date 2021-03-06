@@ -26,8 +26,8 @@ Output written to Host, Log, Append and Replace streams can be followed by a sep
   -Join: when specified, objects will be joined together using the join string.
 * When you specify Log as output stream, you can pass the full path as -LogPath parameter, however that is not required if variable $LogPath exists in the calling script.
   Log output consists of a 6-byte chaining string, a datetimestamp, an optional AttentionText and the object to be written.
-* When you specify Append as output stream, you have to also specify parameter -AppendPath.
-* When you specify Replace as output stream, you have to also specify parameter -ReplacePath.
-* When you specify Xml as outputn you have to also specify parameter -XmlPath.
-* Empty elements are suppressed to the Host, Log, Debug, Verbose and Warning streams.
-* Trailing blank characters are Trimmed to the Host, Error and Warning streams.
+* When you specify Append as output stream, you also have to specify parameter -AppendPath.
+* When you specify Replace as output stream, you also have to specify parameter -ReplacePath.
+* When you specify Xml as outputn you also have to specify parameter -XmlPath.
+* Empty elements are suppressed before writing to the Host, Log, Debug, Verbose and Warning streams.
+* Trailing blank characters are trimmed before writing to the Host, Error and Warning streams.
